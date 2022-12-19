@@ -5,7 +5,7 @@ resource "aws_internet_gateway" "openai_igw" {
   }
 }
 
-resource "aws_internet_gateway_attachment" "openai_igw_attach" {
-  internet_gateway_id = aws_internet_gateway.openai_igw.id
-  vpc_id              = aws_vpc.openai_vpc.id
-}
+#resource "aws_internet_gateway_attachment" "openai_igw_attach" {
+#  vpc_id              = aws_vpc.openai_vpc.id
+##  internet_gateway_id = aws_internet_gateway.openai_igw.id
+#}
